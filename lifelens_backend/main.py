@@ -8,9 +8,19 @@ import spacy
 import re
 import logging
 from typing import List, Tuple
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(title="AI Buddy - Local Only")
 logger = logging.getLogger("uvicorn.error")
+
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # You can restrict later
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Load spaCy NLP model
 try:
