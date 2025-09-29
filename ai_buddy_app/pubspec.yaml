@@ -1,0 +1,27 @@
+name: ai_buddy
+description: LIFELENS App - Your AI Buddy
+publish_to: "none"
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.0.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  provider: ^6.0.5
+  speech_to_text: ^6.6.2
+  file_picker: ^5.2.3
+  intl: ^0.18.1
+  http: ^1.1.0
+  http_parser: ^4.0.1
+  mime: ^1.0.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.1
+
+flutter:
+  uses-material-design: true
