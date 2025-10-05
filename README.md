@@ -1,50 +1,42 @@
-# AI Buddy – FastAPI Backend (for LifeLens)
+# 🌿 LifeLens – AI Buddy (Flutter + FastAPI)
 
-This repository contains the **FastAPI backend** for **LifeLens – Your AI Buddy**, a local-only AI service that processes documents (PDFs or images), extracts text, identifies document types, generates summaries, and extracts key information — all without relying on external APIs.
-
-It is lightweight, private, and designed to integrate seamlessly with the **LifeLens Flutter app**.
-
----
-
-## 🧠 Overview
-
-The AI Buddy backend:
-- Extracts text from uploaded **PDF** or **image** files.
-- Analyzes text locally using **spaCy** for keyword extraction.
-- Detects document type (resume, research paper, receipt, meeting notes, etc.).
-- Generates short, meaningful summaries from extracted text.
-- Returns a clean **JSON response** that the frontend can easily use.
-
-All processing happens locally — **no cloud calls**, ensuring full privacy.
+**LifeLens – Your AI Buddy** is a smart personal assistant application that combines a **Flutter mobile app** with a **FastAPI backend**.  
+It allows users to **record voice notes, extract reminders, and upload documents (PDFs or images)** to receive **AI-generated summaries**, **keywords**, and **document classifications** — all processed locally without any cloud dependency.
 
 ---
 
-## ⚙️ Tech Stack
+## 🧠 Project Overview
 
-| Component | Technology |
-|------------|-------------|
-| **Framework** | FastAPI |
-| **Language** | Python 3.9+ |
-| **PDF Extraction** | PyMuPDF (`fitz`) |
-| **Image OCR** | pytesseract + Pillow |
-| **NLP / Keyword Extraction** | spaCy (`en_core_web_sm`) |
-| **Response Format** | JSON |
-| **CORS** | FastAPI middleware |
+LifeLens has two core components:
 
----
+1. 🧩 **Frontend – ai_buddy_app**  
+   A **Flutter** application that handles:
+   - Voice transcription using `speech_to_text`
+   - Automatic reminder extraction
+   - Local task storage using `Hive`
+   - File uploads (PDFs, images) to the backend
+   - Beautiful, modern UI with Bricksans font and animated mic visualization
 
-## 🧩 Features
+2. ⚙️ **Backend – lifelens_backend**  
+   A **FastAPI** server that processes uploaded files:
+   - Extracts text from PDFs and images
+   - Performs OCR using Tesseract
+   - Extracts keywords using spaCy NLP
+   - Detects document type (resume, research, receipt, etc.)
+   - Generates local summaries — no OpenAI or cloud models required
 
-| Feature | Description |
-|----------|-------------|
-| 🧾 **PDF Text Extraction** | Reads and extracts text from PDF files. |
-| 🖼️ **Image OCR** | Recognizes and extracts text from PNG/JPEG images. |
-| 🧠 **Keyword Extraction** | Identifies important keywords and named entities using spaCy. |
-| 📑 **Document Type Detection** | Automatically categorizes the document type (resume, research, receipt, etc.). |
-| 📝 **Summarization** | Creates a short, meaningful summary (first few sentences). |
-| 🔒 **Local Only** | Everything runs offline — no external APIs or network requests. |
+Together, they form a fully offline AI-powered assistant that can **listen, understand, and organize** your tasks and documents intelligently.
 
 ---
 
-## 📁 Project Structure
+## 🎨 Frontend – `ai_buddy_app` (Flutter)
 
+### 🧩 Features
+- 🎙️ **Voice Transcription**: Converts voice to text using `speech_to_text`.  
+- ⏰ **Smart Reminders**: Detects events, deadlines, and due dates from speech.  
+- 💾 **Local Storage**: Uses `Hive` for persistent task management.  
+- 📄 **File Upload**: Sends PDFs or images to the backend for summarization.  
+- 💬 **Clean Modern UI**: Dark theme, Bricksans font, neon accents, and fluid animations.
+
+```bash
+cd ai_buddy_app
