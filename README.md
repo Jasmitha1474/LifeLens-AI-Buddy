@@ -14,6 +14,13 @@
 
 ---
 
+## 🎥 Demo Video
+
+Experience LifeLens in action:  
+[![Watch Demo](https://img.shields.io/badge/Watch%20Demo%20on-Google%20Drive-blue?logo=google-drive)](https://drive.google.com/file/d/1WTwU8S4fsSiiMc66VQfg7dvBmqAOt0aN/view?usp=drivesdk)
+
+---
+
 ## 🌟 Highlights
 
 - 🎙️ Voice-based interaction powered by **speech recognition**
@@ -57,8 +64,3 @@ Everything runs **entirely offline** — no third-party APIs, no cloud, no inter
 
 ---
 
-### ⚙️ Setup & Run (Frontend)
-
-#### 1. Navigate to the app folder
-```bash
-cd ai_buddy_app
