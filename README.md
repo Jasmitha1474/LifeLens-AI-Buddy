@@ -16,7 +16,7 @@
 
 ---
 
-## 🎥 Demo Video
+## Submissions
 
 🎬 **Watch the full project demonstration:**  
 [![Watch Demo](https://img.shields.io/badge/Watch%20on-Google%20Drive-blue?logo=google-drive)](https://drive.google.com/file/d/1WTwU8S4fsSiiMc66VQfg7dvBmqAOt0aN/view?usp=drivesdk)
