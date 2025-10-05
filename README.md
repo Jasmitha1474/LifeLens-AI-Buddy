@@ -38,5 +38,4 @@ Together, they form a fully offline AI-powered assistant that can **listen, unde
 - 📄 **File Upload**: Sends PDFs or images to the backend for summarization.  
 - 💬 **Clean Modern UI**: Dark theme, Bricksans font, neon accents, and fluid animations.
 
-```bash
-cd ai_buddy_app
+
