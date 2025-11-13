@@ -97,6 +97,21 @@ The system is designed for **full privacy**, with every operation running locall
 
 ---
 
+## 🚀 Running the Backend (Local FastAPI)
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
+
+uvicorn main:app --reload
+
+##📲 Running the Flutter App
+
+cd ai_buddy_app
+flutter pub get
+flutter run
+
 ## 🔒 Privacy Philosophy
 
 LifeLens is built around **local-first AI**:
