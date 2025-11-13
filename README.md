@@ -109,7 +109,9 @@ uvicorn main:app --reload
 ## 📲 Running the Flutter App
 
 cd ai_buddy_app
+
 flutter pub get
+
 flutter run
 
 ## 🔒 Privacy Philosophy
